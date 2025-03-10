@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>d_selector</title>
+  <link rel="stylesheet" href="./d_selector.css" />
+</head>
+<body>
+  <!-- 
+  ! 1. 전체 선택자: 스타일을 모든 문서 요소에 적용
+    >> * 기호를 사용하여 스타일을 한꺼번에 적용
+
+    cf) 전체 웹 브라우저의 기본 스타일 초기화에 사용
+    : 전체 요소들과 배경의 여백 제거에 활용
+
+  ! 2. 타입(요소, 태그) 선택자
+    : 해당 태그를 사용한 모든 요소에 적용
+
+  ! 3. 클래스 선택자
+  ! 4. 아이디 선택자
+  -->
+  요소 외부의 글자
+
+  <div>전체 선택자</div>
+  <p>문단</p>
+  <section>섹션 내용</section>
+
+  <hr />
+
+  <h2>타입 선택자</h2>
+  <p>문단</p>
+  <!-- ul>li*3 -->
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+
+  <hr />
+
+  <!-- button.btn*3 -->
+  <button class="btn" id="basic">기본 버튼</button>
+  <button class="btn primary">주요 버튼</button>
+  <button class="btn secondary">보조 버튼</button>
+
+  <!--
+  ! 5. 그룹 선택자
+  : 같은 스타일 규칙을 사용하는 선택자를 묶어서 적용
+  >> ,(쉼표)로 구분하여 나열   
+  -->
+
+  <hr />
+
+  <h1>선택자 활용</h1>
+
+  <!-- 
+    CSS 고급 선택자
+    : 연결 / 속성 / 가상 클래스(+ 가상 요소)
+  -->
+
+  <div>
+    <h2>연결 선택자</h2>
+    <p>2개 이상의 선택자를 연결하여 적용 대상을 제한</p>
+  
+    <ul>
+      <li>
+        1. 자손(하위)선택자
+        <p id="desc">ul태그의 자손(하위) 선택자</p>
+      </li>
+      <li>2. 자식 선택자</li>
+      <li>3. 인접 형제 선택자</li>
+      <li>4. (일반) 형제 선택자</li>
+    </ul>
+
+    <p id="selector"></p>
+    <span>안녕</span>
+    <span>HELLO</span>
+    <span>곤니치와</span>
+    <span>니하오</span>
+
+    <p id="all"></p>
+    <span>안녕</span>
+    <span>HELLO</span>
+    <span>곤니치와</span>
+    <span>니하오</span>
+  </div>
+
+  <!--
+  ! 속성 선택자
+    : HTML요소의 특정 속성을 기반으로 스타일 지정
+  -->
+
+  <hr />
+
+  <input 
+    type="text"
+    name="firstname"
+    value="First Name"
+  />
+  <input 
+    type="password"
+    name="lasttname"
+  />
+
+  <br />
+  <a href="https://www.example.com">Visit Example</a>
+  <br />
+
+  <div class="example divs">
+    Example / Divs
+  </div>
+
+  <div class="divs">
+    Divs
+  </div>
+
+</body>
+</html>

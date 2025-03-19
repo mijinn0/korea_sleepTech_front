@@ -1,5 +1,5 @@
 //# async & await
-// async(asnchronous: 비동기적인)
+// async(asynchronous: 비동기적인)
 // await(기다리다)
 // - async 함수 내에서 await 키워드를 사용
 // - 비동기 작업이 완료될 때까지 await의 실행을 일시적으로 멈춤

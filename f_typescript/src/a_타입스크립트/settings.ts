@@ -153,6 +153,7 @@
 
 // 위 명령어 총 정리
 /*
+[f_typescript에 위치]
 npm init -y
 
 npm install -g typescript

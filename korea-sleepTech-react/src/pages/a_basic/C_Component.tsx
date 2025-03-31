@@ -34,7 +34,7 @@ import dog from'@/assets/images/dog.jpg';
 
 //! 컴포넌트 생성
 // Img 컴포넌트
-function Img() {
+export function Img() {
   //? HTML 코드 내에서 JS 문법 사용 시
   // : 중괄호 내에 작성
 
@@ -75,4 +75,3 @@ function C_Component() {
 }
 
 export default C_Component
-export { Img }

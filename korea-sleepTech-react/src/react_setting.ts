@@ -21,8 +21,12 @@ export const tmp = '';
 
 // npm install --save-dev @types/node
 // (vite.config.ts 파일 참고)
+// vite.config.ts 기술블로그 작성 (오류 해결)
 
-// tsconfig.app.json
+// npm install react-router-dom
+// npm install --save-dev @types/react-router-dom
+// (App.tsx 파일 참고)
+
 
 
 //! 프로젝트 설정 순서 (터미널에서 대화형으로 진행)

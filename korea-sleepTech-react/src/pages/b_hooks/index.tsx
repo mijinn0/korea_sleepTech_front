@@ -2,6 +2,9 @@ import React from "react";
 import UseState01 from "./a_useState/UseState01";
 import UseState02 from "./a_useState/UseState02";
 import UseState03 from "./a_useState/UseState03";
+import UseState04 from "./a_useState/UseState04";
+import UseState05 from "./a_useState/UseState05";
+import UseState06 from "./a_useState/UseState06";
 
 const h2Style = {
   backgroundColor: "black",
@@ -23,7 +26,10 @@ function Index() {
       <h2 style={h2Style}>리액트 Hooks - useState</h2>
       <UseState01 /> <hr />
       <UseState02 /> <hr />
-      <UseState03 />
+      <UseState03 /> <hr />
+      <UseState04 /> <hr />
+      <UseState05 /> <hr />
+      <UseState06 />
     </div>
   );
 }

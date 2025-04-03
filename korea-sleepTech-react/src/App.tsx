@@ -8,6 +8,8 @@ import './App.css'
 //  >> import 시 폴더명 만으로 가져오기 가능!
 import Basic from '@/pages/a_basic'; // '@/pages/a_basic/index.tsx'와 동일
 import Hooks from '@/pages/b_hooks';
+import Router from '@/pages/c_router';
+import NaviBar from './components/NaviBar';
 
 //& 기본 Vite React 앱의 경로
 // : localhost:5173
@@ -15,6 +17,8 @@ function App() {
   return (
     <>
       <h1>Korea SleepTech React</h1>
+      <NaviBar />
+
       {/* Routes 태그: Route를 감싸는 컴포넌트 */}
       <Routes>
         {/* Route 태그: 단일 태그 사용 권장 */}
@@ -24,6 +28,14 @@ function App() {
         */}
         <Route path='/basic' element={<Basic />} />
         <Route path='/hooks' element={<Hooks />} />
+
+        {/* 
+          중첩 라우팅
+          : 해당 컴포넌트의 경로 내부에서 라우트 경로에 따라 페이지 전환이 일어남을 명시
+
+          path='/해당컴포넌트기본경로/*'
+        */}
+        <Route path='/router/*' element={<Router />} />
       </Routes>
     </>
   )

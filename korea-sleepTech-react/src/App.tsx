@@ -10,6 +10,7 @@ import Basic from '@/pages/a_basic'; // '@/pages/a_basic/index.tsx'와 동일
 import Hooks from '@/pages/b_hooks';
 import Router from '@/pages/c_router';
 import NaviBar from './components/NaviBar';
+import RouterPractice from '@/pages/d_router_practice';
 
 //& 기본 Vite React 앱의 경로
 // : localhost:5173
@@ -36,6 +37,7 @@ function App() {
           path='/해당컴포넌트기본경로/*'
         */}
         <Route path='/router/*' element={<Router />} />
+        <Route path='/router-practice/*' element={<RouterPractice />} />
       </Routes>
     </>
   )

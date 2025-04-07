@@ -13,7 +13,7 @@ import { NavLink } from 'react-router-dom';
 // : Link + 현재 활성화된 페이지 경로에 대한 추가적인 스타일 또는 클래스명 적용 가능
 
 function NaviBar() {
-  const links = ['/', 'basic', 'hooks', 'router', 'router-practice'];
+  const links = ['/', 'basic', 'hooks', 'router', 'router-practice', 'review'];
 
   return (
     <div style={{
@@ -33,6 +33,7 @@ function NaviBar() {
             textDecoration: 'none',
             color: isActive ? 'white' : 'black',
             backgroundColor: isActive ? 'red' : 'lightgray',
+            margin: '5px',
             padding: '10px 20px',
             borderRadius: '5px'
           })}

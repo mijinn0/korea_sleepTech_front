@@ -13,6 +13,8 @@ import NaviBar from './components/NaviBar';
 import RouterPractice from '@/pages/d_router_practice';
 import Review from '@/pages/e_review';
 import Http from '@/pages/f_http';
+import GlobalState from '@/pages/g_global_state';
+
 
 //& 기본 Vite React 앱의 경로
 // : localhost:5173
@@ -41,7 +43,8 @@ function App() {
         <Route path='/router/*' element={<Router />} />
         <Route path='/router-practice/*' element={<RouterPractice />} />
         <Route path='/review/*' element={<Review />} />
-        <Route path='/http/*' element={<Http />} />
+        <Route path='/http' element={<Http />} />
+        <Route path='/global-state' element={<GlobalState />} />
       </Routes>
     </>
   )

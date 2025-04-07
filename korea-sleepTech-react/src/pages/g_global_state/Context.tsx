@@ -53,6 +53,7 @@ interface UserContextType {
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
 //? Provider 생성
+// : 해당 컴포넌트 내부의 자식 & 자손 컴포넌트는 useContext 훅을 통해 데이터 활용 가능
 const UserProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<IUser | null>(null);
 

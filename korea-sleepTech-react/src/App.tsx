@@ -15,6 +15,7 @@ import Review from '@/pages/e_review';
 import Http from '@/pages/f_http';
 import GlobalState from '@/pages/g_global_state';
 import Style from '@/pages/h_style';
+import Todo from '@/pages/z_practice01/Todo';
 
 //# React(TS) + Axios + localStorage 게시글 앱
 import PostApp from '@/pages/f_http/post-app/Main'; // Index 파일이 없어 Main 파일명까지 경로 지정
@@ -50,6 +51,8 @@ function App() {
         <Route path='/global-state' element={<GlobalState />} />
         <Route path='/post-app' element={<PostApp />} />
         <Route path='/style' element={<Style />} />
+        <Route path='/style' element={<Style />} />
+        <Route path='/todo' element={<Todo />} />
       </Routes>
     </>
   )
